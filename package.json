@@ -1,0 +1,24 @@
+{
+  "name": "pomodoist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryaan-web/pomodoist.git"
+  },
+  "keywords": [
+    "aon",
+    "n",
+    "pprike"
+  ],
+  "author": "aon n pprike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryaan-web/pomodoist/issues"
+  },
+  "homepage": "https://github.com/ryaan-web/pomodoist#readme"
+}
