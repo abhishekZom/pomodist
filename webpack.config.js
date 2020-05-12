@@ -5,10 +5,31 @@ const port = process.env.PORT || 30120;
 module.exports = {
     // Webpack configuration goes here
     mode: 'development',
-    entry: './src/index.js',
+    entry: {
+        vendor: ['semantic-ui-react'],
+        app: './src/index.js'
+    },
     output: {
         filename: '[name].[hash].js',
         publicPath: '/'
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                styles: {
+                    name: 'styles',
+                    test: /\.css$/,
+                    chunks: 'all',
+                    enforce: true
+                },
+                vendor: {
+                    chunks: 'initial',
+                    test: 'vendor',
+                    name: 'vendor',
+                    enforce: true
+                }
+            }
+        }
     },
     resolve: {
         alias: {
@@ -18,14 +39,12 @@ module.exports = {
     devtool: 'inline-source-map',
     module: {
         rules: [
-
         // First Rule
         {
             test: /\.(js)$/,
             exclude: /node_modules/,
             use: ['babel-loader']
         },
-
         // Second Rule
         {
             test: /\.css$/,
