@@ -11,14 +11,38 @@
     "url": "git+https://github.com/ryaan-web/pomodoist.git"
   },
   "keywords": [
-    "aon",
-    "n",
-    "pprike"
+    "pomodoro",
+    "todo",
+    "to",
+    "do",
+    "todoist",
+    "pomodoist"
   ],
   "author": "aon n pprike",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ryaan-web/pomodoist/issues"
   },
-  "homepage": "https://github.com/ryaan-web/pomodoist#readme"
+  "homepage": "https://github.com/ryaan-web/pomodoist#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "semantic-ui-react": "^0.88.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
