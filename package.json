@@ -1,10 +1,10 @@
 {
     "name": "pomodoist",
     "version": "1.0.0",
-    "description": "",
+    "description": "This is todo list app with built-in support for pomodoro",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack-dev-serve --config webpack.config.development.js",
+        "dev": "webpack-dev-server --config webpack.config.development.js",
         "prebuild": "rimraf dist",
         "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.production.js"
     },
