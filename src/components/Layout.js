@@ -1,24 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Header, Container, Divider, Icon } from 'semantic-ui-react';
+import withStyles from 'react-jss';
 
-import { pullRight, h1 } from './layout.css';
+const styles = {
+    h1: {
+        marginTop: '10px!important',
+        marginBottom: '10px!important'
+    }
+};
 
-const Layout = ({ children }) => {
+const Layout = ({ classes, children }) => {
     return (
         <Container>
             <Link to="/">
-                <Header as="h1" className={h1}>
-                    webpack-for-react
+                <Header as="h1" className={classes.h1}>
+                    Pomodoist
         </Header>
             </Link>
             {children}
             <Divider />
-            <p className={pullRight}>
-                Made with <Icon name="heart" color="red" /> by Esau Silva
-      </p>
         </Container>
     );
 };
 
-export default Layout;
+const styledLayout = withStyles(styles)(Layout);
+
+export default styledLayout;
