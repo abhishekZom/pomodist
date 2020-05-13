@@ -4,9 +4,9 @@
     "description": "This is todo list app with built-in support for pomodoro",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack-dev-server --config webpack.config.development.js",
+        "dev": "webpack-dev-server --env.env=dev",
         "prebuild": "rimraf dist",
-        "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.production.js"
+        "build": "cross-env NODE_ENV=production webpack -p --env.env=prod"
     },
     "repository": {
         "type": "git",
@@ -44,6 +44,7 @@
         "@hot-loader/react-dom": "^16.13.0",
         "autoprefixer": "^9.7.6",
         "babel-loader": "^8.1.0",
+        "chalk": "^4.0.0",
         "cross-env": "^7.0.2",
         "css-loader": "^3.5.3",
         "cssnano": "^4.1.10",
@@ -56,6 +57,7 @@
         "style-loader": "^1.2.1",
         "webpack": "^4.43.0",
         "webpack-cli": "^3.3.11",
-        "webpack-dev-server": "^3.11.0"
+        "webpack-dev-server": "^3.11.0",
+        "webpack-merge": "^4.2.2"
     }
 }
