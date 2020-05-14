@@ -29,6 +29,8 @@
     },
     "homepage": "https://github.com/ryaan-web/pomodoist#readme",
     "dependencies": {
+        "@material-ui/core": "^4.9.14",
+        "@material-ui/icons": "^4.9.1",
         "prop-types": "^15.7.2",
         "react": "^16.13.1",
         "react-delay-render": "^0.1.2",
