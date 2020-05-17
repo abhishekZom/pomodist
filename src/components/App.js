@@ -31,6 +31,7 @@ const App = ({ classes }) => {
             <div className={ classes.appContainer }>
                 <Switch>
                     <Route exact path="/" component={ Home } />
+                    <Route exact path="/pomodist" component={Home} />
                     <Route exact path="/dynamic" component={ AsyncDynamicPage } />
                     <Route component={ AsyncNoMatch } />
                 </Switch>
