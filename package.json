@@ -29,7 +29,7 @@
     "bugs": {
         "url": "https://github.com/ryaan-web/pomodist/issues"
     },
-    "homepage": "https://github.com/ryaan-web/pomodist#readme",
+    "homepage": "http://ryaan-web.github.io/pomodist",
     "dependencies": {
         "@material-ui/core": "^4.9.14",
         "@material-ui/icons": "^4.9.1",
