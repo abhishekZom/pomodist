@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import withStyles from 'react-jss';
 
 import Layout from './Layout';
+import Header from './Header/Header';
+import TasksList from './TasksList/TasksList';
 
 const styles = {
     home: {
@@ -17,10 +19,8 @@ const Home = (props) => {
     const { classes } = props;
     return (
         <Layout>
-            <p className={ classes.welcomeText }>Welcome to Pomodoist!</p>
-            <p>
-                <Link to="/dynamic">Create new tasks, organise and complete them with pomodoro sessions</Link>
-            </p>
+            <Header></Header>
+            <TasksList></TasksList>
         </Layout>
     );
 };

@@ -1,26 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Header, Container, Divider, Icon } from 'semantic-ui-react';
 import withStyles from 'react-jss';
+import Button from '@material-ui/core/Button';
+import { Divider } from '@material-ui/core';
 
 const styles = {
-    h1: {
-        marginTop: '10px!important',
-        marginBottom: '10px!important'
+    layoutContainer: {
+        width:  '70%',
+        maxWidth: '1024px',
+        margin: '0px auto',
+        textAlign: 'center',
+        fontFamily: 'calibri, arial',
     }
 };
 
 const Layout = ({ classes, children }) => {
     return (
-        <Container>
-            <Link to="/">
-                <Header as="h1" className={classes.h1}>
-                    Pomodoist
-        </Header>
-            </Link>
-            {children}
-            <Divider />
-        </Container>
+        <div className={ classes.layoutContainer }>
+            { children }
+        </div>
     );
 };
 
