@@ -4,10 +4,9 @@ import importedComponent from 'react-imported-component';
 import withStyles from 'react-jss';
 import Home from './Home';
 import Loading from './Loading';
-
+import "regenerator-runtime/runtime.js";
 const styles = {
     appContainer: {
-        background: '#C7C7C7',
         height: '100%'
     }
 };

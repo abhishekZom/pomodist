@@ -6,9 +6,10 @@ const styles = {
         display: 'block',
         padding: '30px 0px',
         height: 'auto',
-        color: '#333333',
+        color: '#eeeeee',
         marginBottom: '10px!important',
-        backgroundColor: '#999999'
+        marginTop: '10px!important',
+        backgroundColor: '#34162D',
     }
 }
 
@@ -17,7 +18,7 @@ const Header = ({ classes }) => {
     return(
         <div>
             <h1 className={ classes.header }>
-            Welcome to pomodoist!
+            Welcome to Pomodoist!
             </h1 >
         </div>
     )
