@@ -8,7 +8,6 @@
         "dev:bundleanalyzer": "yarn dev --env.addons=bundleanalyzer",
         "build": "cross-env NODE_ENV=production webpack -p --env.env=prod",
         "build:bundleanalyzer": "yarn build --env.addons=bundleanalyzer",
-        "predeploy": "yarn build",
         "deploy": "gh-pages -d dist"
     },
     "repository": {
