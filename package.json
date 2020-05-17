@@ -1,5 +1,5 @@
 {
-    "name": "pomodoist",
+    "name": "pomodist",
     "version": "1.0.0",
     "description": "This is todo list app with built-in support for pomodoro",
     "main": "index.js",
@@ -12,7 +12,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ryaan-web/pomodoist.git"
+        "url": "git+https://github.com/ryaan-web/pomodist.git"
     },
     "keywords": [
         "pomodoro",
