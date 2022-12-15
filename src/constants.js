@@ -2,3 +2,13 @@ const TASK_ORIENTATION = {
   LIST_VIEW: 'list_view',
   BOARD_VIEW: 'board_view'
 }
+
+const POMO_TIMER_DEFAULT_MINUTES = {
+  SHORT: 15,
+  MEDIUM: 30,
+  LONG: 60,
+  STRETCHED: 120,
+  DEDICATED: 180,
+  NINJA: 240,
+  GODLIKE: 300
+}
